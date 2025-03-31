@@ -5,7 +5,6 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 </head>
 <body>
     <div class="container">
@@ -18,10 +17,12 @@
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
 
-                <button onclick="getEmailSenha()">Entrar</button>
+                <button type="button" onclick="login()">Entrar</button>
+                <button type="button" onclick="logout()">Sair</button>
             </form>
+            <div id="error-message" style="color: red; display: none;"></div> <!-- Error message element -->
         </div>
     </div>
-    <script src="processarDados.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

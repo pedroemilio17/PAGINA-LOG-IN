@@ -9,8 +9,6 @@ function getEmailSenha(){
     let emailSign = localStorage.getItem("email")
     let senhaSign = localStorage.getItem("senha")
     
-    let email = false
-
     //Confirma
     if(emailLogDado == emailSign && senhaLogDado == senhaSign){
         alert("Você fez Log-in")
