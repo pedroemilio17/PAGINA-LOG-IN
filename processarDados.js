@@ -1,23 +1,20 @@
-function getDados(){
-    let email = document.getElementById("email");
-    let senha = document.getElementById("senha");
-    let senhaConf = document.getElementById("senhaConf");
+function getEmailSenha(){
+    //Recebe os valores
+    let emailLog = document.getElementById("email")
+    let senhaLog = document.getElementById("senha")
+    let senhaLogDado = senhaLog.value
+    let emailLogDado = emailLog.value
 
-    let emailDado = email.value;
-    let senhaDado = senha.value;
-    let senhaConfDado = senhaConf.value;
+    //pega do localStorage
+    let emailSign = localStorage.getItem("email")
+    let senhaSign = localStorage.getItem("senha")
+    
+    let email = false
 
-    // Verificar se as senhas coincidem
-    if(senhaDado === senhaConfDado){
-        // Armazenar os dados no localStorage
-        localStorage.setItem('email', emailDado);
-        localStorage.setItem('senha', senhaDado);
-        localStorage.setItem('senhaConf', senhaConfDado);
-
-        // Redirecionar para a página de login
-        window.location.href = "/LOG-IN/index.html";
-    } else {
-        // Exibir mensagem de erro
-        alert("As senhas não coincidem!");
+    //Confirma
+    if(emailLogDado == emailSign && senhaLogDado == senhaSign){
+        alert("Você fez Log-in")
+    }else{
+        alert("Email ou senha incorretos")
     }
 }
