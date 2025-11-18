@@ -1,0 +1,57 @@
+body {
+    background: #420E0E; 
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+/* --- Estilo do Card Principal (main-container) --- */
+.main-container {
+    background-color: #C8C8C8; /* Fundo branco para o card */
+    padding: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    width: 90%; /* Responsividade em telas pequenas */
+    max-width: 450px; 
+    text-align: center;
+}
+
+/* --- Estilos de Texto --- */
+.welcome-title {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.welcome-message {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.link-area {
+    margin-top: 20px;
+}
+
+.link-button {
+    display: inline-block;
+    background-color: #4E0C0C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove sublinhado do link */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #8B0000;
+}
